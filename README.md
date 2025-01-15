@@ -1,0 +1,3 @@
+# MongoDB findOne() Promise Rejection Handling
+
+This repository demonstrates an issue with unhandled promise rejection in a MongoDB query using the `findOne()` method. The provided code snippet queries a MongoDB collection for a user with the name 'John Doe'.  If the user is not found, the promise is rejected but not explicitly handled, leading to a potential application crash in production environments.  The solution demonstrates proper error handling using a `.catch()` block.
